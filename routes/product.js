@@ -81,7 +81,7 @@ router.post('/', asyncHandler(async (req, res) => {
             fields.forEach((field, index) => {
                 if (req.files[field] && req.files[field].length > 0) {
                     const file = req.files[field][0];
-                    const imageUrl = `https://krishibackedcode.onrender.com/image/products/${file.filename}`;
+                    const imageUrl = `https://krishibackedstore.onrender.com/image/products/${file.filename}`;
                     imageUrls.push({ image: index + 1, url: imageUrl });
                 }
             });
@@ -160,7 +160,7 @@ console.log('Error retrieving product:', error);
 console.log('Add product:', err);
 console.log('Update product:', err);
 console.log('Error adding product:', err);
-console.log('Error updating product:', err);https://krishibackedcode.onrender.com/image/products/${file.filename}`;
+console.log('Error updating product:', err);https://krishibackedstore.onrender.com/image/products/${file.filename}`;
                     // Update the specific image URL in the images array
                     let imageEntry = productToUpdate.images.find(img => img.image === (index + 1));
                     if (imageEntry) {
